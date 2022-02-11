@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<TitledPane alignment="CENTER" animated="false" collapsible="false" prefHeight="600.0" prefWidth="900.0" text="Study Engine" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SEProject.MainPageController">
+  <content>
+    <AnchorPane fx:id="mainBackground" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ffff33;">
+         <children>
+            <Button layoutX="800.0" layoutY="14.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="84.0" text="Read Me" />
+            <Label layoutX="322.0" layoutY="157.0" text="Hello,">
+               <font>
+                  <Font name="Constantia" size="45.0" />
+               </font>
+            </Label>
+            <Label fx:id="displayName" layoutX="451.0" layoutY="157.0" prefHeight="51.0" prefWidth="241.0">
+               <font>
+                  <Font name="Constantia" size="45.0" />
+               </font>
+            </Label>
+            <Label layoutX="101.0" layoutY="229.0" text="Let's Start Studying!">
+               <font>
+                  <Font name="Constantia" size="80.0" />
+               </font>
+            </Label>
+            <Button fx:id="logoutButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleLogout" text="Logout" />
+            <Button fx:id="studyButton" layoutX="354.0" layoutY="349.0" mnemonicParsing="false" onAction="#handleStudy" prefHeight="66.0" prefWidth="187.0" style="-fx-background-color: #3333ff;" text="Study" textFill="WHITE">
+               <font>
+                  <Font name="Constantia Bold" size="35.0" />
+               </font>
+               <effect>
+                  <InnerShadow choke="0.1" radius="29.6625" width="99.65" />
+               </effect>
+            </Button>
+            <Button fx:id="testButton" layoutX="48.0" layoutY="349.0" mnemonicParsing="false" onAction="#handleTest" style="-fx-background-color: #e65c00;" text="Test Yourself!" textFill="WHITE">
+               <font>
+                  <Font name="Constantia Bold" size="35.0" />
+               </font>
+               <effect>
+                  <InnerShadow choke="0.3" height="26.96" radius="24.002499999999998" width="71.05" />
+               </effect>
+            </Button>
+            <Button fx:id="editButton" layoutX="572.0" layoutY="349.0" mnemonicParsing="false" onAction="#handleEdit" prefHeight="66.0" prefWidth="290.0" style="-fx-background-color: #2eb82e;" text="Add/Edit Courses" textFill="WHITE">
+               <font>
+                  <Font name="Constantia Bold" size="30.0" />
+               </font>
+               <effect>
+                  <InnerShadow choke="0.08" radius="24.895" width="80.58" />
+               </effect>
+            </Button>
+         </children>
+         <effect>
+            <InnerShadow choke="0.22" radius="14.7675" width="40.07" />
+         </effect>
+      </AnchorPane>
+  </content>
+   <font>
+      <Font name="System Bold" size="21.0" />
+   </font>
+   <effect>
+      <InnerShadow choke="0.17" radius="16.552500000000002" width="47.21" />
+   </effect>
+</TitledPane>

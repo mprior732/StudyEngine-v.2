@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SEProject.UpdatePageController">
+   <children>
+      <Label fx:id="oldQuestion" alignment="CENTER" layoutY="272.0" prefHeight="142.0" prefWidth="895.0" text="This should be hidden" textFill="#fffdfd">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TitledPane alignment="CENTER" animated="false" collapsible="false" layoutX="10.0" layoutY="10.0" prefHeight="600.0" prefWidth="902.0" text="Study Engine" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ffff33;">
+               <children>
+                  <Button fx:id="readMe" layoutX="801.0" layoutY="14.0" mnemonicParsing="false" prefHeight="14.0" prefWidth="82.0" text="Read Me" />
+                  <TextArea fx:id="updateQuestion" layoutX="175.0" layoutY="173.0" prefHeight="141.0" prefWidth="550.0" wrapText="true">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </TextArea>
+                  <TextArea fx:id="updateAnswer" layoutX="175.0" layoutY="345.0" prefHeight="83.0" prefWidth="549.0" wrapText="true">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </TextArea>
+                  <Button fx:id="confirmUpdate" layoutX="224.0" layoutY="440.0" mnemonicParsing="false" onAction="#updateQuestion" prefWidth="180.0" style="-fx-background-color: #00e600;" text="Confirm" textFill="#f4f2f2">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow choke="0.29" radius="15.3625" width="42.45" />
+                     </effect>
+                  </Button>
+                  <Label layoutX="224.0" layoutY="76.0" text="Edit question in course: ">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="cancelUpdate" layoutX="499.0" layoutY="440.0" mnemonicParsing="false" onAction="#handleCancel" prefWidth="180.0" style="-fx-background-color: #ff3300;" text="Cancel" textFill="#fcfbfb">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow choke="0.28" radius="14.7675" width="40.07" />
+                     </effect>
+                  </Button>
+                  <Label fx:id="courseToEdit" layoutX="506.0" layoutY="76.0">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="174.0" layoutY="141.0" text="Question:">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="174.0" layoutY="315.0" text="Answer:">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+               <effect>
+                  <InnerShadow height="46.03" radius="28.77" width="71.05">
+                     <color>
+                        <Color red="0.06315789371728897" green="0.06315789371728897" blue="0.06315789371728897" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </AnchorPane>
+         </content>
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.14" radius="14.7675" width="40.07" />
+         </effect>
+      </TitledPane>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TitledPane alignment="CENTER" animated="false" collapsible="false" prefHeight="600.0" prefWidth="900.0" text="Study Engine" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SEProject.StudyPageController">
+   <content>
+      <AnchorPane fx:id="answer2" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ffff33;">
+         <effect>
+            <InnerShadow radius="22.5125" width="71.05" />
+         </effect>
+         <children>
+            <Label fx:id="incorrectLabel" alignment="CENTER" layoutX="150.0" layoutY="484.0" prefHeight="69.0" prefWidth="492.0" textFill="#ff0101">
+               <font>
+                  <Font name="System Bold" size="50.0" />
+               </font>
+            </Label>
+            <Button layoutX="449.0" layoutY="60.0" mnemonicParsing="false" onAction="#startStudying" style="-fx-background-color: #33cc33;" text="Generate Question" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <effect>
+                  <InnerShadow choke="0.09" radius="17.15" width="49.6" />
+               </effect>
+            </Button>
+            <Label layoutX="117.0" layoutY="154.0" text="Question: ">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Button fx:id="backButton" layoutX="29.0" layoutY="23.0" mnemonicParsing="false" onAction="#handleBack" text="Back" />
+            <Button layoutX="800.0" layoutY="23.0" mnemonicParsing="false" text="Read Me" />
+            <Label fx:id="errorLabel" alignment="CENTER" layoutX="140.0" layoutY="486.0" prefHeight="0.0" prefWidth="554.0" textFill="#f20808">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Separator layoutX="2.0" layoutY="111.0" prefHeight="11.0" prefWidth="893.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Separator>
+            <ComboBox fx:id="courseList" layoutX="213.0" layoutY="63.0" prefHeight="37.0" prefWidth="204.0" />
+            <CheckBox fx:id="checkBoxTrue" layoutX="230.0" layoutY="436.0" mnemonicParsing="false" onAction="#uncheckFalse" prefHeight="50.0" prefWidth="142.0" text="True">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="checkBoxFalse" layoutX="396.0" layoutY="436.0" mnemonicParsing="false" onAction="#uncheckTrue" text="False">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+            </CheckBox>
+            <TextArea fx:id="questionField" editable="false" layoutX="117.0" layoutY="200.0" prefHeight="130.0" prefWidth="592.0" wrapText="true">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </TextArea>
+            <TextArea fx:id="answerField" editable="false" layoutX="117.0" layoutY="367.0" prefHeight="54.0" prefWidth="592.0" wrapText="true">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextArea>
+            <Label layoutX="117.0" layoutY="331.0" text="Answer:">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="courseErrorLabel" alignment="CENTER" layoutX="136.0" layoutY="117.0" prefHeight="33.0" prefWidth="554.0" textFill="#f20808">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="correctLabel" alignment="CENTER" layoutX="136.0" layoutY="486.0" prefHeight="0.0" prefWidth="554.0" textFill="#3ccf0b">
+               <font>
+                  <Font name="System Bold" size="50.0" />
+               </font>
+            </Label>
+            <Button layoutX="606.0" layoutY="438.0" mnemonicParsing="false" onAction="#checkAnswer" style="-fx-background-color: #3399ff;" text="Submit">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+         </children>
+      </AnchorPane>
+   </content>
+   <font>
+      <Font name="System Bold" size="21.0" />
+   </font>
+   <effect>
+      <InnerShadow choke="0.14" radius="14.7675" width="40.07" />
+   </effect>
+</TitledPane>
